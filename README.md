@@ -1,6 +1,6 @@
 # Fluid Data Visualizer
 
-Interactive Unity/URP shader demo extracted from `SlotBattle`, with a Sphere-style night city generated around the fluid sphere.
+Interactive Unity/URP shader demo, with a Sphere-style night city generated around the fluid sphere, inspired by https://www.xordev.com/
 
 ![Fluid Data Visualizer demo](Documentation/fluid-data-visualizer-demo.png)
 

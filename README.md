@@ -1,16 +1,17 @@
 # Fluid Data Visualizer
 
-Interactive Unity/URP shader demo extracted from `SlotBattle`.
+Interactive Unity/URP shader demo extracted from `SlotBattle`, with a Sphere-style night city generated around the fluid sphere.
 
 ![Fluid Data Visualizer demo](Documentation/fluid-data-visualizer-demo.png)
 
 ## Overview
 
-Fluid Data Visualizer renders a raymarched fluid surface and lets the user click on the mesh to inject a UV-space ripple. The runtime component reads the hit UV from a `MeshCollider`, then drives the shader through a `MaterialPropertyBlock`.
+Fluid Data Visualizer renders a raymarched fluid sphere and lets the user click on the mesh to inject a UV-space ripple. The runtime component reads the hit UV from a `MeshCollider`, then drives the shader through a `MaterialPropertyBlock`. The demo scene uses `CityscapeGenerator` to build a compact night city around an oversized center sphere.
 
 ## Contents
 
 - `Assets/FluidDataVisualizer/Scripts/FluidDataVisualizer.cs` - click handling and ripple animation.
+- `Assets/FluidDataVisualizer/Scripts/CityscapeGenerator.cs` - procedural city generator used by the demo scene.
 - `Assets/FluidDataVisualizer/Shaders/XorFluidRaymarching.shader` - URP HLSL raymarching shader with interactive ripple distortion.
 - `Assets/FluidDataVisualizer/Materials/Custom_XorFluidRaymarching.mat` - demo material.
 - `Assets/FluidDataVisualizer/Scenes/FluidDataVisualizerDemo.unity` - ready-to-open demo scene.
@@ -25,7 +26,7 @@ Fluid Data Visualizer renders a raymarched fluid surface and lets the user click
 1. Open this folder in Unity Hub.
 2. Open `Assets/FluidDataVisualizer/Scenes/FluidDataVisualizerDemo.unity`.
 3. Press Play.
-4. Click the fluid surface to trigger expanding ripple distortion.
+4. Click the sphere to trigger expanding ripple distortion.
 
 ## Regenerating the Demo
 

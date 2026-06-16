@@ -38,3 +38,7 @@ The repository includes `Assets/Editor/FluidDataVisualizerDemoBuilder.cs`. From 
   -projectPath "$(pwd)" \
   -executeMethod FluidDataVisualizerDemoBuilder.BuildDemo
 ```
+
+## License
+
+MIT
